@@ -1,0 +1,8 @@
+[Unit]
+Description=Rainy Mood
+
+[Service]
+ExecStart=/usr/bin/ffplay -nodisp -loglevel quiet -loop 0 %h/Music/RainyMood.m4a
+
+[Install]
+WantedBy=default.target
